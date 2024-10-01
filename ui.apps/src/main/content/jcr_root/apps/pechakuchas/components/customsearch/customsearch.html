@@ -1,0 +1,48 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2022 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<section data-sly-use.search="com.adobe.cq.wcm.core.components.models.Search"
+         id="${search.id}"
+         class="cmp-customsearch"
+         role="search"
+         data-cmp-is="search"
+         data-cmp-min-length="${search.searchTermMinimumLength}"
+         data-cmp-results-size="${search.resultsSize}">
+    <div class="cmp_search__info" aria-live="polite" role="status"></div>
+    <form class="cmp-search__form form" data-cmp-hook-search="form"
+      method="get" action="${currentPage.path @ addSelectors=['searchresults'], extension='json', suffix=search.relativePath}"
+      autocomplete="off">
+    
+        <button>
+          <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+              <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        
+        <div class="cmp-search__field">
+          <span class="cmp-search__loading-indicator" data-cmp-hook-search="loadingIndicator"></span>
+          <input class="cmp-search__input input" data-cmp-hook-search="input" type="text" name="fulltext" placeholder="${'Search' @ i18n}"
+                role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-invalid="false" aria-expanded="false">
+          <button class="cmp-search__clear reset" data-cmp-hook-search="clear" aria-label="${'Clear' @ i18n}" type="reset">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+          </button>
+        </div>
+        
+    </form>
+    <div class="cmp-search__results" aria-label="${'Search results' @ i18n}" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false"></div>
+    <sly data-sly-include="itemTemplate.html"/>
+</section>

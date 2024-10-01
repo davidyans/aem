@@ -1,0 +1,108 @@
+.card {
+    width: 30rem; /* Ajuste del ancho en rem */
+    height: 40rem; /* Ajuste de la altura en rem */
+    margin: 3rem auto;
+    background-color: #24233b;
+    border-radius: 0.8rem;
+    z-index: 1;
+    box-shadow: 0 1rem 1rem rgb(73, 70, 92);
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Para apilar el contenido */
+}
+
+.card:hover {
+    transform: translateY(-0.7rem); /* Efecto hover en rem */
+    box-shadow: 0rem 1rem 1rem black;
+}
+
+.header {
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    padding: 0 0.4rem;
+}
+
+.circle2 {
+    display: inline-block;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.title-code {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+.code-container {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 0 1.5rem 1.5rem 1.5rem; /* Aumento del padding */
+    box-sizing: border-box;
+}
+
+#code {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    background-color: rgb(73, 70, 92);
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#code:focus {
+    outline: none !important;
+}
+
+.copy {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(100, 116, 139);
+    transition: color 0.3s ease;
+}
+
+.copy:hover {
+    color: rgb(148, 163, 184);
+}
