@@ -1,11 +1,14 @@
-
+@import '../variables';
 //== XF Footer style, used on page template
 
 footer.experiencefragment {
+    font-family: $font-family;
     border-top: 1px solid $color-foreground;
+    background: #111013;
 
     @media (prefers-color-scheme: dark) {
         border-color: $color-foreground-dark;
+        background: #111013;
     }
 
     .cmp-separator__horizontal-rule {

@@ -1,6 +1,5 @@
-/* Mantén las clases originales para la funcionalidad del componente y agrega tus personalizaciones */
 
-/* Estilos personalizados para el formulario */
+
 .form {
     display: flex;
     align-items: center;
@@ -10,7 +9,7 @@
     border-radius: 5px;
 }
 
-/* Estilos para el botón de búsqueda */
+
 .cmp-search__button {
     background: none;
     border: none;
@@ -18,7 +17,7 @@
     margin-right: 10px;
 }
 
-/* Estilos para el input de texto */
+
 .input {
     flex-grow: 1;
     padding: 8px 10px;
@@ -27,7 +26,7 @@
     font-size: 16px;
 }
 
-/* Estilos para el botón de limpiar */
+
 .reset {
     background: none;
     border: none;
@@ -35,13 +34,13 @@
     padding-left: 10px;
 }
 
-/* Estilos del ícono de limpiar */
+
 .reset svg {
     width: 24px;
     height: 24px;
 }
 
-/* Opcional: Estilo para indicar el estado activo del campo */
+
 .input:focus {
     border-color: #0073e6;
     outline: none;

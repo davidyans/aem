@@ -1,7 +1,10 @@
-cmp-headercontainer {
-    background: #111013;
+@import '../site/variables';
+
+#footer.cmp-footercontainer {
+    font-family: $font-family;
+    background: $color-background-2;
     width: 100%;
     padding: 2rem;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }

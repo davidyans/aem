@@ -1,8 +1,11 @@
+@import '../site/variables';
+
 .cmp-title {}
 
 #main-title.cmp-title {
-  color: #f5efdf;
+  color: $color-background-2;
   font-size: 1rem;
+  font-family: $font-family;
   text-align: center;
 }
 

@@ -1,19 +1,13 @@
+@import '../site/variables';
 .cmp-headercontainer {
-    background: #111013;
-    width: 100%;
+    background: $color-background-2;
     padding: 2rem;
     display: flex;
     font-size: 1.5rem;
 }
 
-#title-container.cmp-headercontainer{
-    background: linear-gradient(
-                    90deg,
-                    rgb(0, 0, 0) 0%,      /* Negro */
-                    rgb(15, 4, 21) 20%,   /* Transición a púrpura oscuro */
-                    rgb(30, 8, 42) 50%,   /* Púrpura más claro */
-                    rgb(44, 12, 63) 100%  /* Color base */
-    );
+#main-title.cmp-headercontainer{
+    background: $color-background-2;
     width: 100%;
     display: flex;
 }

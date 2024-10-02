@@ -1,6 +1,49 @@
-.cmp-tabs {}
-.cmp-tabs__tablist {}
-.cmp-tabs__tab {}
-.cmp-tabs__tab--active {}
-.cmp-tabs__tabpanel {}
-.cmp-tabs__tabpanel--active {}
+@import '../site/variables';
+
+.cmp-tabs {
+  background-color: $color-background;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cmp-tabs__tablist {
+  display: flex;
+  border-bottom: 2px solid $color-background-2;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cmp-tabs__tab {
+  flex: 1;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: transparent;
+  color: $color-background-2;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.cmp-tabs__tab:hover {
+  background-color: rgba(17, 16, 19, 0.1);
+}
+
+.cmp-tabs__tab--active {
+  background-color: $color-background-2;
+  color: $color-background;
+  font-weight: bold;
+}
+
+.cmp-tabs__tabpanel {
+  padding: 15px;
+  background-color: $color-background;
+  color: $color-background-2;
+  border-top: 1px solid $color-background-2;
+  display: none;
+}
+
+.cmp-tabs__tabpanel--active {
+  display: block;
+}
