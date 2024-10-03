@@ -9,20 +9,61 @@ header.experiencefragment {
     }
 
     a {
-        color: $color-foreground;
+        font-size: 1rem;
+        color: $color-background;
         text-decoration: none;
+        position: relative;
 
         @media (prefers-color-scheme: dark) {
             color: $color-foreground-dark;
         }
 
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1rem;
+            width: 0;
+            height: 2px;
+            background-color: $color-background;
+            transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            &::after {
+                background-color: $color-foreground-dark;
+            }
+        }
+
         &:hover,
         &:focus {
-            color: $color-link;
-            text-decoration: underline;
+            color: #d2d2d2;
 
             @media (prefers-color-scheme: dark) {
                 color: $color-link-dark;
+            }
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &.active {
+            color: #d2d2d2;
+
+            @media (prefers-color-scheme: dark) {
+                color: $color-link-dark;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -1rem;
+                width: 100%;
+                height: 2px;
+                background-color: $color-background;
+                transition: none;
             }
         }
     }
@@ -46,22 +87,21 @@ header.experiencefragment {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: flex; /* Distribución horizontal */
-        justify-content: space-around; /* Distribuye los elementos de manera uniforme */
-        align-items: center; /* Alinea verticalmente los elementos en caso de tener diferentes alturas */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .cmp-navigation__item--level-0 {
         color: white;
         display: flex;
-        flex-direction: row; /* Asegura que los elementos estén en una fila */
-        /* Si necesitas una proporción entre columnas, usa flex-grow o ajusta manualmente */
+        flex-direction: row;
     }
 
     .cmp-navigation__item-link {
         color: white;
         display: block;
-        padding: 10px 15px; /* Espacio entre los enlaces */
+        padding: 10px 15px;
         text-decoration: none;
     }
 
@@ -70,9 +110,8 @@ header.experiencefragment {
         font-weight: bold;
     }
 
-    /* Opcional: estilos para subniveles si hay elementos secundarios */
     .cmp-navigation__item--level-0 > .cmp-navigation__group {
-        display: flex; /* Distribuye horizontalmente los subelementos */
+        display: flex;
         justify-content: space-between;
     }
 

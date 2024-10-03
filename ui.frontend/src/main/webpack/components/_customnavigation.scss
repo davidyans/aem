@@ -1,5 +1,7 @@
+@import '../site/variables';
+
 .cmp-customnavigation, nav.cmp-customnavigation  {
-    color: white;
+    color: $color-background;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -8,15 +10,14 @@
 }
 
 .cmp-customnavigation li {
-    color: white;
+    color: $color-background;
     display: inline-block;
     padding: 10px 20px;
 }
 
 .cmp-customnavigation a {
-    color: white;
+    color: $color-background;
     text-decoration: none;
-    color: #000;
 }
 
 .cmp-customnavigation a:hover {

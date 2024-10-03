@@ -19,3 +19,14 @@
 }
 
 .cmp-text__paragraph {}
+
+.note {
+    background-color: $color-background;
+    border-left: 4px solid $color-background-2;
+    padding: 15px;
+    margin: 20px 0;
+    font-family: $font-family;
+    color: #4a4a4a;
+    border-radius: 5px;
+    font-size: .9rem;
+}
