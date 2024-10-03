@@ -4,6 +4,6 @@
     cq:isContainer="{Boolean}true"
     jcr:description="Container component, used to group other components and apply a common style or layout."
     jcr:primaryType="cq:Component"
-    jcr:title="Header container"
+    jcr:title="Custom container"
     sling:resourceSuperType="wcm/foundation/components/responsivegrid"
     componentGroup="Pechakuchas site - Content"/>
