@@ -1,4 +1,4 @@
-package com.pechakuchas.core.models;
+package com.pechakuchas.core.servlets;
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
