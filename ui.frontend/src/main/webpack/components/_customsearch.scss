@@ -1,0 +1,47 @@
+
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.cmp-search__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.input {
+    flex-grow: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+.reset {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+
+.reset svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.input:focus {
+    border-color: #0073e6;
+    outline: none;
+}

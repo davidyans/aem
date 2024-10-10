@@ -1,0 +1,23 @@
+@import "~@fontsource/poppins/index.css";
+
+//== Font
+
+$font-family: 'Poppins', sans-serif;
+$font-size:             1.2rem;
+$font-height:           1.5;
+
+//== Color
+
+// Normal mode
+$color-foreground:      #202020;
+$color-background: #f1eae4;
+$color-background-2: #111013;
+$color-link: #221d53;
+//$color-link:            #2020E0;
+$color-link-2: #4c4cc1;
+
+// Dark mode
+$color-foreground-dark: invert($color-foreground);
+$color-background-dark: invert($color-background);
+$color-link-dark:       invert($color-link);
+$color-link-dark-2: invert($color-link-2);;

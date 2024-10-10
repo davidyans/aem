@@ -1,0 +1,14 @@
+@import '../site/variables';
+.cmp-headercontainer {
+    background: $color-background-2;
+    padding: 2rem;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+}
+
+#main-title.cmp-headercontainer{
+    background: $color-background;
+    width: 100%;
+    display: flex;
+}

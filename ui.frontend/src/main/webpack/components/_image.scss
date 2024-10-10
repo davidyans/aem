@@ -1,0 +1,32 @@
+#header.cmp-image {
+  max-width: 25%;
+  display: block;
+  margin: 0;
+}
+
+#footer-img.cmp-image{
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.cmp-image {
+  max-width: 80%;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+img.cmp-image:not([id]) {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.cmp-image__link {}
+.cmp-image__image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.cmp-image__title {}

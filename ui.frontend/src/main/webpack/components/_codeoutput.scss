@@ -1,0 +1,27 @@
+@import '../site/variables';
+
+.console-output {
+  background-color: $color-background-2;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #333;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.console-output p {
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.code-block {
+  background-color: $color-background;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: $color-background-2;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+}

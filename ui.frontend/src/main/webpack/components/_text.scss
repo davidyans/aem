@@ -1,0 +1,40 @@
+@import '../site/variables';
+
+.cmp-text {
+}
+
+.cmpt-text-white{
+    color: $color-background;
+}
+
+.cmp-text-center {
+    text-align: center;
+}
+
+#footer-copyright.cmp-text, #footerabout.cmp-text {
+    color: $color-background;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 1rem;
+}
+
+.cmp-text__paragraph {}
+
+.note {
+    background-color: $color-background;
+    border-left: 4px solid $color-background-2;
+    padding: 15px;
+    margin: 20px 0;
+    font-family: $font-family;
+    color: #4a4a4a;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+
+.text-content{
+    flex: 1;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: $color-background-2;
+    margin-bottom: 20px;
+}
